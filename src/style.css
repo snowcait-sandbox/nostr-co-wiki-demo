@@ -1,0 +1,159 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #192b35;
+  background: #f7f9f8;
+  line-height: 1.6;
+}
+body {
+  margin: 0;
+}
+header,
+main,
+footer {
+  max-width: 62rem;
+  margin: auto;
+  padding: 1.25rem;
+}
+header {
+  border-bottom: 1px solid #c9d5d3;
+}
+nav,
+.row {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav a:first-child {
+  font-weight: 700;
+}
+a {
+  color: #125c70;
+  text-underline-offset: 0.2em;
+}
+h1 {
+  line-height: 1.2;
+}
+label {
+  display: block;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+input,
+textarea,
+button {
+  font: inherit;
+  box-sizing: border-box;
+}
+input,
+textarea {
+  padding: 0.6rem;
+  border: 1px solid #829b9a;
+  border-radius: 0.2rem;
+  max-width: 100%;
+  width: 100%;
+  background: white;
+  color: inherit;
+}
+button {
+  padding: 0.55rem 1rem;
+  background: #125c70;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+fieldset {
+  padding: 0;
+  border: 0;
+}
+fieldset button {
+  margin-top: 1rem;
+}
+.row input {
+  flex: 1;
+  min-width: 12rem;
+}
+.article-list {
+  padding: 0;
+  list-style: none;
+}
+.article-list li,
+.history li {
+  padding: 1rem 0;
+  border-bottom: 1px solid #d5dfdd;
+}
+.article-list p {
+  margin: 0.25rem 0;
+}
+small,
+footer {
+  color: #48626b;
+}
+.prose {
+  overflow-wrap: anywhere;
+}
+.prose img {
+  max-width: 100%;
+}
+.prose table {
+  border-collapse: collapse;
+}
+.prose td,
+.prose th {
+  border: 1px solid #c9d5d3;
+  padding: 0.4rem;
+}
+pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+code {
+  overflow-wrap: anywhere;
+}
+.prose pre {
+  padding: 1rem;
+  background: #e8efed;
+}
+.diff pre {
+  margin: 0;
+  padding: 0.25rem 0.5rem;
+}
+.added {
+  background: #dcf2e3;
+}
+.removed {
+  background: #fbe1e1;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+:focus-visible {
+  outline: 3px solid #cc7820;
+  outline-offset: 3px;
+}
+@media (max-width: 40rem) {
+  header,
+  main,
+  footer {
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 1.7rem;
+  }
+  .row {
+    gap: 0.5rem;
+  }
+}
+
+output {
+  overflow-wrap: anywhere;
+}

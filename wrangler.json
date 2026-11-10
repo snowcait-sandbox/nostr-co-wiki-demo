@@ -1,0 +1,33 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "nostr-co-wiki-demo",
+  "keep_vars": true,
+  "main": "worker.js",
+  "compatibility_date": "2026-11-09",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "assets": {
+    "directory": ".svelte-kit/cloudflare",
+    "binding": "ASSETS"
+  },
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "WIKI",
+        "class_name": "Wiki"
+      }
+    ]
+  },
+  "secrets": {
+    "required": [
+      "WIKI_PRIVATE_KEY"
+    ]
+  },
+  "exports": {
+    "Wiki": {
+      "type": "durable-object",
+      "storage": "sqlite"
+    }
+  }
+}
