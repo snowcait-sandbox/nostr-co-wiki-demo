@@ -26,7 +26,7 @@
     "playwright": "^1.65.0",
     "prettier": "3.9.10",
     "prettier-plugin-svelte": "^4.1.1",
-    "typescript": "^6.0.3",
+    "typescript": "^7.0.2",
     "typescript-eslint": "^8.72.1",
     "wrangler": "^4.158.0",
     "@sveltejs/adapter-cloudflare": "^8.0.2",
